@@ -1,0 +1,109 @@
+<!--
+    Prática. Você deverá implementar um formulário de pesquisa de satisfação. Esse formulário é dividido em duas partes.
+    1. Dados pessoais, onde o cliente deverá fornecer seu nome, e-mail, e telefone para contato.
+    2. Pesquisa, onde o cliente deverá responder a três perguntas. Duas delas utilizarão radio buttons como campo de resposta,
+    e uma utilizará menu de dropdown. Antes do botão de envio, inclua um checkbox indicando se o cliente autoriza compartilhar
+    sua resposta com terceiros.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa</title>
+</head>
+<body>
+    <h1>Pesquisa de satisfação</h1>
+    <form method="post"  action="processar-pesquisa.html"></form>
+
+    <section>
+        <h2>Dados pessoais</h2>
+
+        <p>
+          <label for="nome">Nome: </label>
+          <input type="text"  placeholder="Seu nome" id="nome">
+        </p>
+
+        <p>
+            <label for="e-mail">E-mail: </label>
+            <input type="email" placeholder="Seu e-mail" id="e-mail">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone: </label>
+            <input type="tel"  placeholder="Seu telefone de contato" id="telefone">
+        </p>
+    </section>
+
+    <section>
+        <h2>Dados da pesquisa</h2>
+
+        <P> Numa escala de 1 a 5, me diga qual o seu nível de satisfação em relação ao nos serviços ofertados?
+            <input type="radio" id="1"  name="nivel-atendimento">
+            <label for="1">1</label>
+            <input type="radio" id="2"  name="nivel-atendimento">
+            <label for="2">2</label>
+            <input type="radio" id="3"  name="nivel-atendimento">
+            <label for="3">3</label>
+            <input type="radio" id="4"  name="nivel-atendimento">
+            <label for="4">4</label>
+            <input type="radio" id="5"  name="nivel-atendimento">
+            <label for="5">5</label>
+        </P>
+
+
+        <p>
+            <P> Numa escala de 1 a 5, me diga o quão satisfeito, Você ficou com a resolução do seu problema?
+                <input type="radio" id="1"  name="nivel-resoluçao">
+                <label for="1">1</label>
+                <input type="radio" id="2"  name="nivel-resoluçao">
+                <label for="2">2</label>
+                <input type="radio" id="3"  name="nivel-resoluçao">
+                <label for="3">3</label>
+                <input type="radio" id="4"  name="nivel-resoluçao">
+                <label for="4">4</label>
+                <input type="radio" id="5"  name="nivel-resoluçao">
+                <label for="5">5</label>
+            </P>
+
+
+            <P>Em uma escala de 1 a 5, qual é a probabilidade de você recomendar o nosso produto/serviço para um amigo ou familiar?
+                <input type="radio" id="1"  name="próximas">
+                <label for="1">1</label>
+                <input type="radio" id="2"  name="próximas">
+                <label for="2">2</label>
+                <input type="radio" id="3"  name="próximas">
+                <label for="3">3</label>
+                <input type="radio" id="4"  name="próximas">
+                <label for="4">4</label>
+                <input type="radio" id="5"  name="próximas">
+                <label for="5">5</label>
+            </P>
+
+
+           <p>
+            <label for="departamento">Departamento de Atendimento: </label>
+            <select>
+                <option>Administração</option>
+                <option>Recursos Humanos</option>
+                <option>Financeiro</option>
+                <option>Contábil</option>
+                <option>Marketing e vendas</option>
+                <option>Produção</option>
+                <option>Logística</option>
+                <option>Tecnologia da informação</option>
+            </select>
+           </p>
+
+           <p>
+            <input type="checkbox" id="compartilhar-informações">
+            <label for="compartilhar-informações">Você autoriza o compartilhamento de dados preenchidos nesse formulário com terceiros.</label>
+           </p>
+        </p>
+    </section>
+
+    <input type="submit" value="Enviar"/>
+
+</body>
+</html>
