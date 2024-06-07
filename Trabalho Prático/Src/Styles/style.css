@@ -1,0 +1,122 @@
+body {
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header, main, aside, footer {
+    margin: 30px;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+header {
+    background: center;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    background-image:url(/Trabalho\ Prático//Src/imgs/ai-generated-8364577_1280.png); 
+    color: #0d0c0c;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+header img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+aside {
+    background-color: #2a4053;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.content section {
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    border-bottom: 2px solid #043a6a;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    background-color: #042b4e;
+    color: #fff;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+
+
+
