@@ -1,0 +1,28 @@
+/*
+ "Cores definidas em um primeiro momento, mas que podem ser revistas se impactarem negativamente a estilização."....
+
+destaque.color{ color: #042b4e }
+
+fonte.color{ color: #111F37 }
+
+backgroud.color{ color: #2C519 }
+
+color { color: #2a4053 }
+
+color{ color:  #f5f5f5 }
+
+color{ color: #222335 }
+
+color{ color: #9296E4 }
+
+color{ color: #343551 }
+
+color{ color: #5A5B8C }
+    */
+
+
+html{
+    background: #2C5190;
+    color: #111F37;
+
+}
