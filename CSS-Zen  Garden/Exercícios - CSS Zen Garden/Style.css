@@ -24,35 +24,43 @@ color{ color: #5A5B8C }
  /*
     Prática. Nesta atividade iremos personalizar o texto presente na página CSS Zen Garden: The Beauty of CSS Design.
 
-1. Vamos definir algumas diretivas gerais para nossa página.
+ O foco dessa atividade será reposicionar os elementos da nossa página!
 
-- Defina a largura geral da página em 80%, limitado a no máximo 1280px de largura. Centralize a página na tela.
+1. Defina o elemento .page-wrapper como referência para posicionamento.
 
-- Defina a altura da seção de introdução em 550px
+2. Faça com que o painel .explanation ocupe 60% da largura disponível, mas crie um espaçamento a direita de 35% utilizando margin .
 
-- Remova o container #design-archives da renderização da página
+  - Adicione uma borda à direita do painel de 1px, com a cor 
 
-2. Agora vamos incrementar o cabeçalho da página.
+  - Adicione um espaçamento interno de 2% no lado direito do painel.
 
-- Inverta a cor do cabeçalho aplicando o fundo escuro e a fonte clara.
+3. Agora mova o menu de designs para a direita da página, ocupando o espaço em branco deixado pelo elemento .explanation .
 
-- Coloque título e subtítulo lado-a-lado, mas mantendo espaçamento entre eles e o restante da página.
+  - Faça-o iniciar na parte superior da página, após a parte de introdução (por exemplo, aplicando top: 560px ).
 
-- Adicione um espaçamento lateral de 1em para o título principal.
+  - Faça-o iniciar após o elemento .explanation (por exemplo, aplicando left: 62% ).
 
-3. É hora de incrementar os menus!
+  - Adicione um espaçamento interno horizontal de 2% no menu para centralizá-lo.*/
 
-- Remova os bullets dos itens de menu presentes no painel lateral.
 
-- Aumente o espaçamento entre os itens do menu para 1em, pelo menos.
+.page-wrapper {
+    position: relative;
+}
 
-- Centralize os itens presentes em cada menu.
+.explanation {
+    width: 60%;
+    border-right: #111F37 solid 1px;
+    padding-right: 2%;
+}
 
-4. Por fim, vamos aplicar uma inversão de cores no rodapé para ele ganhar um contraste em relação ao restante da página.
+#design-selection {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
 
-- Adicione 4% de espaçamento externo no rodapé.
-
-- Transforme cada link do rodapé em uma caixa colocando borda sólida de 2px, e espaçamento interno de 0.5em.*/
 
 
 .main footer {
