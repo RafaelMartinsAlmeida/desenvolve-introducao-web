@@ -47,7 +47,7 @@ color{ color: #5A5B8C }
 
 .main footer a {
     border: solid 2px #111F37   ;
-    padding: o.5em;
+    padding: 0.5em;
     display: inline-block;
 }
 
@@ -151,26 +151,6 @@ abbr {font-variant: small-caps;}
     align-self: center;
 }
 
- /*
-    Prática. Nesta atividade iremos personalizar o texto presente na página CSS Zen Garden: The Beauty of CSS Design.
-     1. Customize a aparência dos links da seguinte forma: 
-
-- Por padrão, devem ter a cor de destaque e estarem em negrito.
-
-- Se sobrepostos, devem ter sua cor alterada para uma tonalidade mais clara/escura. Os links visitados não devem ficar mais em negrito.
-
-2. Vamos dar um destaque a primeira letra do primeiro parágrafo da seção principal. Você deverá customizá-lo para que:
-
-- Tenha tamanho de fonte 3 vezes maior que o padrão.
-
-- Seja de uma fonte diferente da escolhida para o  site.
-
-- Fique flutuando a esquerda.
-
-OBS: você precisará aplicar mais de um pseudo seletor para realizar essa estilização. Fique atento!
-
-3. Utilize bordas para criar um separador entre os itens presentes no menu de design. Aplique uma borda superior no topo de todos os itens de menu. Aplique uma borda inferior apenas no último item da lista.
-  */
 
 a strong {
     color: #042b4e
@@ -183,7 +163,7 @@ a strong {
  .main p:first-of-type:first-letter {
     font-size: 3em;
     font-family: 'Times New Roman', Times, serif;
-    float: left;
+    float: top left;
  }
 
  .design-selection li {
@@ -195,3 +175,85 @@ a strong {
     border-bottom: #042b4e solid 1px;
     border-bottom: 5px;
  }
+
+/*
+ Vamos deixar a nossa página do CSS Zen Garden responsiva a dispositivos móveis! Para isso iremos implementar as seguintes modificações.
+
+1. Crie uma media query para telas inferiores a 768 pixels; nós a utilizaremos como layout mobile.
+
+2. Realize as seguintes mudanças para o layout mobile:
+
+- Remova o reposicionamento do menu de design para que ele se encaixe no mesmo lugar de antes.
+
+- Remova a borda lateral ao lado da div
+
+- Mude a orientação do Flexbox presente no elemento para vertical, e organize os elementos de forma empilhada
+
+- Remova a altura fixa presente no cabeçalho da página
+
+- Remova também o espaçamento inicial dado a cada um dos parágrafos
+*/
+
+@media screen and (max-width: 768px) {
+
+
+    #design-selection {
+      position: static;
+      width: 100%;
+    }
+
+    .explanation {
+        border-right: none;
+        width: 100%;
+    }
+
+    #zen-intro {
+        height: auto;
+    }
+
+    .participation {
+        flex-direction: column;
+    }
+
+    p {
+        text-indent: 0;
+    }
+}
+
+
+
+/*
+Vamos Deixar nossa página mais adequada a mídia de impressão também!
+
+1. Crie uma media query para meios impressos, mas sem qualquer tipo de restrição relacionada a tela
+
+2. Adicione as seguintes modificações a essa media query: 
+
+- Altere o estilo da fonte para uma serifada, como times .
+
+- Inverta as cores do banner para que o fundo fique claro (assim como o restante da página)
+*/
+
+
+@media print{
+   
+    html {
+     font-family: 'Times New Roman', Times, serif;
+   }
+
+   #zen-intro header {
+     background-color: #2C5190 ;
+     color: #111F37 ;
+   }
+
+   #design-selection {
+    position: static;
+    width: 100%;
+  }
+
+  .explanation {
+      border-right: none;
+      width: 100%;
+  }
+}
+
